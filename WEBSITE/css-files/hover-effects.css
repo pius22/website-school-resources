@@ -1,0 +1,33 @@
+#container div:hover
+{
+    background-color: transparent;
+    border: 1px solid #ccefff;
+    width: 78%;
+}
+#container:hover
+{
+    background: rgba(0,0,0,0.5);
+}
+#side-bar img:hover{
+    transition: 0.9s all ease;
+    /* background-color: rgba(0,0,0,0.5); */
+    transform: rotate(-360deg);
+}
+@keyframes arrow-header {
+    0%
+    {
+        position: relative;
+        top: 0;
+    }
+    100%
+    {
+        position: relative;
+        top: 5px;
+        
+    }
+}
+#content-body-container div img:hover{
+    transition: all 1.4s ease;
+    width: 205px;
+    height: 140px;
+}

@@ -1,0 +1,41 @@
+@media(max-width:450px){
+    .contents-header h1
+    {
+        font-size:8vw;
+    }
+    .contents-header i{
+        font-size: 10px;
+        /* background-color: red; */
+        text-align: center;
+    }
+    nav
+    {
+        display: none;
+        background: none;
+        border-bottom: 2px solid red;
+        width: 200px;
+        border-radius: 0;
+        padding: 0;
+    }
+    nav ul{
+        position: relative;
+        /* background-color: blue; */
+        justify-content: space-evenly;
+        width: 700px;
+    }
+    nav ul li
+    {
+        display: flex;
+                position: relative;
+        top: 16px;
+    }
+    nav ul li a
+    {
+        font-size: 10px;
+    }
+}
+@media  (max-width:655px){
+    nav{
+        display: none;
+    }
+}
