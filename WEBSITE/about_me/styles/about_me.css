@@ -7,7 +7,7 @@
 body,html
 {
     overflow: hidden;
-    background: url(../images/mountain01-3840.jpeg);
+    background: url(../images/cristina-gottardi-wndpWTiDuT0-unsplash.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -50,13 +50,25 @@ section
     align-items: center;
     width: 20rem;
     height: 460px;
-    background: linear-gradient(-300deg, transparent, rgba(255,255,255,0.3));
+    background: linear-gradient(-300deg, transparent 20%, rgba(0,0,0,0.7));
+    /* rgba(255,255,255,0.3) */
     border-radius: 15px;
+    animation: moving 2s linear ;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+@keyframes moving {
+    50%
+    {
+        box-shadow:  0 0 8px #0ff,
+                    -1px 1px 10px purple,
+                    2px  2px 42px rgba(0,0,0,0.5);
+    }
 }
 #container:hover
 {
     transition: .8s all ease;
-    background: rgba(187, 202, 214, 0.5);
+    /* background: rgba(187, 202, 214, 0.5); */
+    background: rgba(0,0,0,0.5);
 }
 .content:hover
 {
@@ -93,7 +105,7 @@ section
     color: blueviolet;
 }
 /* responsive now................ */
-/* @media screen and (max-width:600px) {
+@media screen and (max-width:500px) {
     #social img
     {
         width: 30px;
@@ -101,14 +113,14 @@ section
     }
     #social a
     {
-        font-size: 12px;
+        font-size: 10px;
     }
     #container
     {
-        width: 85%;
+        width: 80%;
     }
-    .content
+    .content a,code
     {
-        font-size: 14px;
+        font-size: 3vw;
     }
-} */
+}
